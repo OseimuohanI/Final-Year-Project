@@ -4,3 +4,6 @@
 [submodule "PythonNLP"]
 	path = PythonNLP
 	url = https://github.com/OseimuohanI/FYP_NLP.git
+[submodule "Frontend"]
+	path = Frontend
+	url = https://github.com/OseimuohanI/FYP_Frontend.git
