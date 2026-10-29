@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-29",
+  "note": "Moves preserved all file bytes; related path/documentation updates followed separately.",
+  "moves": [
+    {
+      "from": "PROJECT_GUIDE.md",
+      "to": "docs/PROJECT_GUIDE.md",
+      "files_moved": 1
+    },
+    {
+      "from": "update_contract.py",
+      "to": "Backend/scripts/update_contract.py",
+      "files_moved": 1
+    },
+    {
+      "from": "sentiment-baseline-test-payload.json",
+      "to": "NLP_Service/examples/sentiment-baseline-test-payload.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/generate-batch-fixtures.py",
+      "to": "Frontend/scripts/generate_batch_fixtures.py",
+      "files_moved": 1
+    },
+    {
+      "from": "NLP_Service/test_forecast.py",
+      "to": "NLP_Service/experiments/forecasting/holt_flat_series.py",
+      "files_moved": 1
+    },
+    {
+      "from": "NLP_Service/test_forecast_noise.py",
+      "to": "NLP_Service/experiments/forecasting/holt_flat_series_noise.py",
+      "files_moved": 1
+    },
+    {
+      "from": "NLP_Service/test_mk.py",
+      "to": "NLP_Service/experiments/forecasting/mann_kendall_noise.py",
+      "files_moved": 1
+    },
+    {
+      "from": "NLP_Service/test_ss_es.py",
+      "to": "NLP_Service/experiments/forecasting/statespace_holt.py",
+      "files_moved": 1
+    },
+    {
+      "from": "NLP_Service/test_ss_es_bounds.py",
+      "to": "NLP_Service/experiments/forecasting/statespace_holt_bounds.py",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/sample-batch-260-mixed.json",
+      "to": "Frontend/samples/sample-batch-260-mixed.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/sample-batch-balanced-260.json",
+      "to": "Frontend/samples/sample-batch-balanced-260.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/sample-batch-negative-heavy-260.json",
+      "to": "Frontend/samples/sample-batch-negative-heavy-260.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/sample-batch-neutral-heavy-260.json",
+      "to": "Frontend/samples/sample-batch-neutral-heavy-260.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/sample-batch-pidgin.json",
+      "to": "Frontend/samples/sample-batch-pidgin.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Frontend/sample-batch-positive-heavy-260.json",
+      "to": "Frontend/samples/sample-batch-positive-heavy-260.json",
+      "files_moved": 1
+    },
+    {
+      "from": "Scraper/output/itel-power-station-real",
+      "to": "Scraper/data/collections/itel-power-station",
+      "files_moved": 5
+    },
+    {
+      "from": "Scraper/output/live-pilot-charger",
+      "to": "Scraper/data/archive/live-pilot-charger",
+      "files_moved": 2
+    },
+    {
+      "from": "Scraper/output/live-pilot-earbuds",
+      "to": "Scraper/data/archive/live-pilot-earbuds",
+      "files_moved": 2
+    },
+    {
+      "from": "Scraper/output/live-pilot-review-endpoint",
+      "to": "Scraper/data/archive/live-pilot-review-endpoint",
+      "files_moved": 2
+    },
+    {
+      "from": "Scraper/output/itel-power-station-pilot",
+      "to": "Scraper/data/archive/itel-power-station-pilot",
+      "files_moved": 2
+    },
+    {
+      "from": "Scraper/output/itel-review-page-pilot",
+      "to": "Scraper/data/archive/itel-review-page-pilot",
+      "files_moved": 2
+    },
+    {
+      "from": "Scraper/output/itel-replay-check",
+      "to": "Scraper/data/archive/itel-replay-check",
+      "files_moved": 3
+    },
+    {
+      "from": "Scraper/output/itel-browser-sources",
+      "to": "Scraper/data/collections/itel-power-station/sources",
+      "files_moved": 45
+    }
+  ]
+}

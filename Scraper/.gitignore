@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+output/
+.env
+data/collections/*
+!data/collections/itel-power-station/
+!data/collections/nivea-dry-impact/
+data/collections/*/*
+!data/collections/*/DATASET_NOTES.md
+data/archive/

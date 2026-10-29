@@ -1,9 +1,12 @@
 [submodule "Backend"]
 	path = Backend
-	url = https://github.com/OseimuohanI/FYP_Backend.git
-[submodule "PythonNLP"]
-	path = PythonNLP
-	url = https://github.com/OseimuohanI/FYP_NLP.git
+	url = git@github.com:OseimuohanI/FYP_Backend.git
+	branch = main
+[submodule "NLP_Service"]
+	path = NLP_Service
+	url = git@github.com:OseimuohanI/FYP_NLP.git
+	branch = main
 [submodule "Frontend"]
 	path = Frontend
-	url = https://github.com/OseimuohanI/FYP_Frontend.git
+	url = git@github.com:OseimuohanI/FYP_Frontend.git
+	branch = main

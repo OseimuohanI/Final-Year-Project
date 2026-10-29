@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.pytest_cache/
+__pycache__/
+.venv/
+.venv-py39/
+
+.logs/
+.env
+.env.*
+!.env.example
