@@ -1,0 +1,2 @@
+# Historical payloads retain their original bytes, including old whitespace.
+_archive/** -text -whitespace

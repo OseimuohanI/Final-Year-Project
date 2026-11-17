@@ -45,8 +45,8 @@ The first release has account creation/login/logout and one owning business per 
 
 Before restructuring, a complete SQLite backup and review/sentiment snapshot were saved locally:
 
-- `.logs/backups/before-business-products.sqlite`
-- `.logs/backups/before-business-products.json`
+- `_archive/cleanup-2026-11-17/.logs/backups/before-business-products.sqlite`
+- `_archive/cleanup-2026-11-17/.logs/backups/before-business-products.json`
 
 `php artisan research:prepare-workspace` moves the recognised legacy public cases into product records in the demo business. It is idempotent and does not create duplicate review or sentiment records. The original business rows are archived after their reviews move; `products.legacy_business_id` retains the link. Existing saved product-case outlooks are copied into the corresponding product. The old business forecast rows remain attached to archived records for provenance, not presented as combined-business forecasts.
 

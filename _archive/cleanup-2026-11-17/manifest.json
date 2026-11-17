@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "project": "Pulseboard",
+  "checkpoint_commits": {
+    "parent": "f5c4a0a27a53a814b21d0289369527ce027c6dab",
+    "Backend": "4b27b2084256cff4d52344ed9b978e853bc2dcc7",
+    "Frontend": "6e6bb63406d9d0bfc15bce69de1042fecff877ba",
+    "NLP_Service": "06cdbd6ed5bd3ea8cb2497a60ca8e67b79191241"
+  },
+  "fingerprint_method": "SHA-256 over sorted relative names, object kinds, POSIX modes, file SHA-256 values and symlink targets; symlinks are never followed.",
+  "local_artifacts_note": "Local-only payloads are excluded from Git. Copy this archive separately to preserve datasets, backups and legacy environments.",
+  "entries": [
+    {
+      "path": "Backend/scripts/update_contract.py",
+      "reason": "One-off text patcher for an earlier contract; current contract is maintained directly.",
+      "distribution": "versioned",
+      "fingerprint": {
+        "sha256": "313a61cdc43199258e231b263b7d34f3e7bc02e6bb33fa429df2658e47c3ee71",
+        "file_count": 1,
+        "bytes": 1512
+      }
+    },
+    {
+      "path": "Backend/database/seeders/ForecastTestSeeder.php",
+      "reason": "Random synthetic pre-account forecast demo, replaced by isolated research workspace and commercial demo commands.",
+      "distribution": "versioned",
+      "fingerprint": {
+        "sha256": "da31d460e01291477b7981f5093fc1576b9dba543c90e1378ecc14d5cdf9c16e",
+        "file_count": 1,
+        "bytes": 2991
+      }
+    },
+    {
+      "path": "Backend/dev-docs",
+      "reason": "Original manual forecast instructions use the old unauthenticated API and obsolete test seeder; replaced by docs/TESTING_THE_APP.md.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "b453b88e99cf47eeb344761db5191b82d2acc01f4d4a393ebc7b5b839436f88f",
+        "file_count": 2,
+        "bytes": 8066
+      }
+    },
+    {
+      "path": "NLP_Service/experiments",
+      "reason": "One-off synthetic Holt and Mann-Kendall diagnostics; current behavior is covered by maintained forecasting code and tests.",
+      "distribution": "versioned",
+      "fingerprint": {
+        "sha256": "f399e2a012e90fb5c8d6df293654adc294338ea2456f0dfaa6dc1cdfed7becb0",
+        "file_count": 6,
+        "bytes": 2269
+      }
+    },
+    {
+      "path": "docs/PROJECT_GUIDE.md",
+      "reason": "Initial 29 October planning guide contains superseded setup, model and data milestones; current startup and release guides remain active.",
+      "distribution": "versioned",
+      "fingerprint": {
+        "sha256": "4077c91d8b64fe327eb01e004af3e819188da5956ab773e1d571fe3c710ac879",
+        "file_count": 1,
+        "bytes": 15093
+      }
+    },
+    {
+      "path": "docs/FILE_MOVES.json",
+      "reason": "Frozen 29 October relocation ledger; retained as historical provenance alongside this cleanup manifest.",
+      "distribution": "versioned",
+      "fingerprint": {
+        "sha256": "84ad0009f339f953f005f452c291ac50cd3b775bd77d8d17d5dca6c4c74e263c",
+        "file_count": 1,
+        "bytes": 3610
+      }
+    },
+    {
+      "path": "NLP_Service/evaluation/results/business_backtest/itel-pipeline-smoke",
+      "reason": "Temporary smoke/reproduction output; the cited original study and latest report comparison results remain active.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "70d5e78c76d3e95aaa5f79e3db0a01e332c7da8e18f55de5437f5d713c6cfe5d",
+        "file_count": 4,
+        "bytes": 525975
+      }
+    },
+    {
+      "path": "NLP_Service/evaluation/results/business_backtest/itel-reproduction-check",
+      "reason": "Temporary smoke/reproduction output; the cited original study and latest report comparison results remain active.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "5baea4df897adc68a97d8bab733fc9e54d84fb44fd2f15436d8553ef8c23aed5",
+        "file_count": 4,
+        "bytes": 547462
+      }
+    },
+    {
+      "path": "NLP_Service/evaluation/results/business_backtest/itel-final-reproduction-check",
+      "reason": "Temporary smoke/reproduction output; the cited original study and latest report comparison results remain active.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "1c48f317d15db3a1b5228484d8fd8e7cb602540450c9b52385c6556ff146ad2e",
+        "file_count": 4,
+        "bytes": 558694
+      }
+    },
+    {
+      "path": "Scraper/data/archive",
+      "reason": "Failed HTTP/browser collection pilots and old parser verification replays; successful source collections remain active.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "819817e7373d984c6ac97198a5d6ca27b184bc78e638ffc062936313d16e89d6",
+        "file_count": 20,
+        "bytes": 544679
+      }
+    },
+    {
+      "path": ".logs/.DS_Store",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "629aff011f0ef6cf21cae3fdd9685e3e609725bb47f5f181921b8f8ab81b0889",
+        "file_count": 1,
+        "bytes": 8196
+      }
+    },
+    {
+      "path": ".logs/app-verification.json",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "911cd301896a2091557dd5babf8f8a0e7e5657f49c5bd119c467d2d59a479db3",
+        "file_count": 1,
+        "bytes": 714
+      }
+    },
+    {
+      "path": ".logs/automatic-forecast-verification.json",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "1026a0b5c8e3e462dfd319666a68bda919cce88ac90206577833d42db26b7dc8",
+        "file_count": 1,
+        "bytes": 1224
+      }
+    },
+    {
+      "path": ".logs/backups",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "8fd6a2edec9c620967bfd9661b83541af5a6128236aa916371c8f2507aa44921",
+        "file_count": 2,
+        "bytes": 1845750
+      }
+    },
+    {
+      "path": ".logs/business-workspace-verification.json",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "e822d5ce4b9f8d9d585599732617bf48ec43f939a2598f5b1b7bfcf5c9951357",
+        "file_count": 1,
+        "bytes": 679
+      }
+    },
+    {
+      "path": ".logs/csv-helper.js",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "c5793e5a7fce9956c3cf50afc3af79ee6c4959dbe022f3a8207a610ae30305e3",
+        "file_count": 1,
+        "bytes": 1219
+      }
+    },
+    {
+      "path": ".logs/demo-login-repair-20261103",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "03bcdb790abb6e2c7fbe2e4514bf36ea9308992e8ccdeae31bf34091b7f93d3d",
+        "file_count": 3,
+        "bytes": 3175235
+      }
+    },
+    {
+      "path": ".logs/finalise_nivea.py",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "98baef6706cefbae15c1ded4ead4ae9503b10a97fcb5d0bbd72cf6d6e2c3c583",
+        "file_count": 1,
+        "bytes": 3402
+      }
+    },
+    {
+      "path": ".logs/frontend-before-product-workspaces.js",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "80dbda4c010344833e2444805316c34093eb76a02138f805f3e7e49d64e932a3",
+        "file_count": 1,
+        "bytes": 27424
+      }
+    },
+    {
+      "path": ".logs/import-recovery-verification.json",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "c913aeef19c3fd696f71fe8a14081e2161a34b2757e0cbacfddd72e2c2b35d31",
+        "file_count": 1,
+        "bytes": 853
+      }
+    },
+    {
+      "path": ".logs/nivea-20261029",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "c2abd2f1b835b62a9c94839c674fc3b1b3b88d85aa4c563fd9814325d0fbd567",
+        "file_count": 315,
+        "bytes": 3050049
+      }
+    },
+    {
+      "path": ".logs/nivea-replay-verification",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "b9a0ec83ffbf337ccb2404830cf17acc59c50bdbbb992c91d4d2769bcd88ff62",
+        "file_count": 4,
+        "bytes": 1744247
+      }
+    },
+    {
+      "path": ".logs/nivea-replay.log",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "7e084854e502cad845344cb1b426e4d099ba70689687f7df5c1a5c70597eb02d",
+        "file_count": 1,
+        "bytes": 16827
+      }
+    },
+    {
+      "path": ".logs/repository-publish-20261029.json",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "fad6abba847b583d470b7de6b3696fbd1420ee0039154f326908e0de0587dea9",
+        "file_count": 1,
+        "bytes": 1329
+      }
+    },
+    {
+      "path": ".logs/screenshots",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "15b91a3c772d9827314c93c0de702911d228e03170e58cb02d3f2de5439eedc3",
+        "file_count": 15,
+        "bytes": 1241869
+      }
+    },
+    {
+      "path": ".logs/verify_automatic_forecasts.py",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "08a1706f7a84863552ede863e5ab396d148adb65bfe7cbe31e8aaeae88be561c",
+        "file_count": 1,
+        "bytes": 3076
+      }
+    },
+    {
+      "path": ".logs/verify_business_workspace.py",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "8a9ead5b8fde17f78ef1954070793817880db19ffdd6153b62c7522459c8eb91",
+        "file_count": 1,
+        "bytes": 3504
+      }
+    },
+    {
+      "path": ".logs/verify_live_app.py",
+      "reason": "Historical verification, collection replay, screenshot, code snapshot or repair backup; active service logs and current commercial checks remain in .logs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "4c682cd93eb4cf2e56cbe80008ff3184b2a3b16cb90f0f9f1331755ebefbd1de",
+        "file_count": 1,
+        "bytes": 3472
+      }
+    },
+    {
+      "path": ".venv-py39",
+      "reason": "Unused earlier Python installation; current launcher, tests and documented commands use the root .venv. Restore to its exact original path before using it.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "658196c3ecf7f98079ab49ab19a5d6012c2cc34c05d5f3a94fd86fd430edf488",
+        "file_count": 28277,
+        "bytes": 676106855
+      }
+    },
+    {
+      "path": "NLP_Service/.venv",
+      "reason": "Unused earlier Python installation; current launcher, tests and documented commands use the root .venv. Restore to its exact original path before using it.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "718acae502d4eccd096fa539f97870116930e804549acfd3e88b247fdda31476",
+        "file_count": 24903,
+        "bytes": 643105840
+      }
+    },
+    {
+      "path": "NLP_Service/.venv311",
+      "reason": "Unused earlier Python installation; current launcher, tests and documented commands use the root .venv. Restore to its exact original path before using it.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "8aadd39e5ae6bdbc85dbbdda25e5e95c7791902d9db6a8ad49098b3f44b65854",
+        "file_count": 35385,
+        "bytes": 889539849
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/buffer.png",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "0491b8bda0b460c99c5003458ecc2a3fa0545d9b24e25a3eaeb25963a68c8ea0",
+        "file_count": 1,
+        "bytes": 67904
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/buffer.svg",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "0c8090edf316a133b8cbcc66983bbd581da4790ea774782c2078779a5ba69545",
+        "file_count": 1,
+        "bytes": 6808
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/final-render",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "782f871ff373dcc22bfcf18ef1b076c59038e2f63797ceb422d198c219e6f59e",
+        "file_count": 12,
+        "bytes": 4612995
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/olist-forward.png",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "b144feb4943918917e55e8dce98ba7aee25abe47897d2efe7e9bd2267150674b",
+        "file_count": 1,
+        "bytes": 97618
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/olist-forward.svg",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "f14a37aafa74c76a16544479a47ae6bc07a1e326453f79b73c7ade7eec6e38d0",
+        "file_count": 1,
+        "bytes": 9299
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/olist-original.png",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "bbddf2a3920c0f7605bdd340186aa9ddbce0a9a2dc4a124fd4a6041ed496c121",
+        "file_count": 1,
+        "bytes": 98152
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/olist-original.svg",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "58da52d45dd28f34ce97bc8d2b55cb8b99142c70543e94c7659ba30ced08869b",
+        "file_count": 1,
+        "bytes": 9963
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/render",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "ff15baa2faa44d698b45f6b3d73a1f507b4c76310613884e7229e48c0602f130",
+        "file_count": 12,
+        "bytes": 4620663
+      }
+    },
+    {
+      "path": "outputs/forecast-comparison-2026-11-17/work/table6-check.png",
+      "reason": "Intermediate report figure or visual QA render; final DOCX, builder, manifest and rasterizer remain in outputs/.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "353618693bb420e410f8be201d6c69a02160676c805a3e374f81c42c7af9304c",
+        "file_count": 1,
+        "bytes": 82409
+      }
+    },
+    {
+      "path": ".DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "ddad302ec752d49e22c6e7135019c0e2e1cf50be74582997b4e0ad766aa39056",
+        "file_count": 1,
+        "bytes": 14340
+      }
+    },
+    {
+      "path": "Backend/.DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "f00eebd0b91a4be1be30ed2e0313f456990f0745568c09404aef4873f2fd4920",
+        "file_count": 1,
+        "bytes": 8196
+      }
+    },
+    {
+      "path": "Frontend/.DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "9efe6dfae70fc4e76c9d75c3a41cb7033a34880fd39f7893af1c0707e708aff4",
+        "file_count": 1,
+        "bytes": 6148
+      }
+    },
+    {
+      "path": "NLP_Service/.DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "deda3d59dd8adf5102ffbcf5244eb805161009851395f89eef5321ed3332b586",
+        "file_count": 1,
+        "bytes": 8196
+      }
+    },
+    {
+      "path": "NLP_Service/evaluation/.DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "f9732fc681c4b746f13eae0ae6de1403c19292fa57d285b20868f041266b76ec",
+        "file_count": 1,
+        "bytes": 6148
+      }
+    },
+    {
+      "path": "NLP_Service/evaluation/results/.DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "30d1028a92d45dd89406b0cc51dff812e50c7fe46f822d04f9e66199a9908c25",
+        "file_count": 1,
+        "bytes": 6148
+      }
+    },
+    {
+      "path": "Scraper/.DS_Store",
+      "reason": "Finder metadata; unnecessary for application operation or research reproduction.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "85efac00bd0d33a4d0e6c6d26465c7c9bd3c7b6d57ceec186b379649d38def9a",
+        "file_count": 1,
+        "bytes": 6148
+      }
+    },
+    {
+      "path": "Backend/scripts/__pycache__",
+      "reason": "Bytecode cache of the archived one-off contract patcher; no remaining backend Python maintenance script.",
+      "distribution": "local-only",
+      "fingerprint": {
+        "sha256": "8e18db75506e6b61c63fa07c734fc800a69b6e6789c305f8d53a5d0e63f59ec3",
+        "file_count": 1,
+        "bytes": 2344
+      }
+    }
+  ]
+}

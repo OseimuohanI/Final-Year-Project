@@ -66,7 +66,7 @@ New runs go under `Scraper/data/collections/<UTC timestamp>/`.
 | `report.json` | Dates, reviews per week, ratings, source/limit information, and errors |
 | `sources/` | Selected response HTML and its source manifest |
 
-The [first real itel dataset](data/collections/itel-power-station/DATASET_NOTES.md) and its captures are together under `data/collections/itel-power-station/`. Earlier failed pilots and the verification replay are in `data/archive/`. Generated data is ignored by version control.
+The [first real itel dataset](data/collections/itel-power-station/DATASET_NOTES.md) and its captures are together under `data/collections/itel-power-station/`. Earlier failed pilots and verification replays are preserved at `_archive/cleanup-2026-11-17/Scraper/data/archive/` relative to the project root; see the [cleanup guide](../_archive/cleanup-2026-11-17/README.md). Generated data is ignored by version control.
 
 The [second real Nivea dataset](data/collections/nivea-dry-impact/DATASET_NOTES.md) contains 1,532 unique review fingerprints from all 155 listing pages. Its two import batches preserve actual dates and stable IDs. The dataset notes include exact coverage, limitations and an offline replay command.
 
@@ -102,7 +102,7 @@ The [published Jumia crawler instructions](https://www.jumia.com.ng/robots.txt),
 
 Earlier direct HTTP checks returned 410, while the in-app browser accessed the supplied itel product and its 21 review pages. The preserved 201-review dataset came from that browser and was replayed through the saved-HTML parser. This does not guarantee acceptance of every new Chromium session; inspect the current report for live results.
 
-The new local Chromium response-capture mode was checked on the same itel URL on 29 October 2026 and also received HTTP 410. It stopped and retained a failed-run report under `data/archive/browser-response-validation-2/`. Response selection, pagination, and stopping on access blocks have additionally been verified in a real Chromium session using locally supplied HTTP responses, without live Jumia requests.
+The new local Chromium response-capture mode was checked on the same itel URL on 29 October 2026 and also received HTTP 410. It stopped and retained a failed-run report under `_archive/cleanup-2026-11-17/Scraper/data/archive/browser-response-validation-2/` (relative to the project root). Response selection, pagination, and stopping on access blocks have additionally been verified in a real Chromium session using locally supplied HTTP responses, without live Jumia requests.
 
 ```bash
 .venv/bin/python -m pytest Scraper/tests -q

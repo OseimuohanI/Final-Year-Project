@@ -1,5 +1,7 @@
 # Development account and report-writing guide
 
+> Historical account of the 29 October snapshot. For the later commercial forecasting implementation and findings, use [COMMERCIAL_RELEASE.md](COMMERCIAL_RELEASE.md) and [COMMERCIAL_BASELINE_RESULTS.md](COMMERCIAL_BASELINE_RESULTS.md). Superseded files referenced below are preserved in the [17 November archive](../_archive/cleanup-2026-11-17/README.md).
+
 Project: **Design and Implementation of a Sentiment Analysis System to Predict the Performance of an Online Business in Nigeria**
 
 Prepared from the conversation, the current implementation and retained project evidence. The collected-data and evaluation snapshot is **29 October 2026**. This is material for drafting the final report, not a claim of supervisor approval, a literature review, or a substitute for independent research evaluation.
@@ -389,16 +391,16 @@ Scattered files were moved into role-based directories without discarding origin
 | `Frontend/src/` | Application scripts and styles |
 | `Frontend/samples/` | Generated UI/import examples |
 | `Frontend/scripts/` | Fixture and asset-version helpers |
-| `Backend/scripts/` | Backend maintenance utilities, including `update_contract.py` |
+| `_archive/cleanup-2026-11-17/Backend/scripts/` | Historical one-off contract patcher |
 | `NLP_Service/tests/` | Automated Python service tests |
-| `NLP_Service/experiments/forecasting/` | Earlier exploratory diagnostics, separated from tests |
+| `_archive/cleanup-2026-11-17/NLP_Service/experiments/forecasting/` | Earlier exploratory diagnostics, separated from tests |
 | `NLP_Service/evaluation/` | Protocols, benchmark/economic inputs and evaluation drivers |
 | `NLP_Service/examples/` | Manual API example payloads |
 | `Scraper/data/collections/` | Real collections, imports and provenance |
-| `Scraper/data/archive/` | Failed pilots and older checks |
+| `_archive/cleanup-2026-11-17/Scraper/data/archive/` | Failed pilots and older checks |
 | `docs/` | Design, data, testing and release explanations |
 
-`docs/FILE_MOVES.json` records the moves. Existing separate repositories were retained. Dependencies, cached model revisions, data fingerprints, source checksums, fold predictions, scaler values and coefficients support reproduction. Generated result folders, databases and large caches are often ignored by Git, so retaining source code alone will not necessarily retain every defence artifact.
+`_archive/cleanup-2026-11-17/docs/FILE_MOVES.json` records the moves. Existing separate repositories were retained. Dependencies, cached model revisions, data fingerprints, source checksums, fold predictions, scaler values and coefficients support reproduction. Generated result folders, databases and large caches are often ignored by Git, so retaining source code alone will not necessarily retain every defence artifact.
 
 The launcher coordinates local ports/configuration, runs preparation against the separate research database, uses available cached model snapshots, performs service checks and starts the tracking worker. This makes the prototype easier to demonstrate, but does not constitute production hosting/deployment.
 
@@ -477,7 +479,7 @@ All paths below are relative to the project root for portable use inside this do
 
 | Evidence | Location |
 | --- | --- |
-| Project scope/design evolution | `docs/PROJECT_GUIDE.md`, `docs/PREDICTION_DESIGN.md` |
+| Project scope/design evolution | `_archive/cleanup-2026-11-17/docs/PROJECT_GUIDE.md`, `docs/PREDICTION_DESIGN.md` |
 | Exact collection counts and caveats | `Scraper/data/collections/itel-power-station/DATASET_NOTES.md`, `Scraper/data/collections/nivea-dry-impact/DATASET_NOTES.md` |
 | Collector operation/access limitations | `Scraper/README.md`, `Scraper/tests/` |
 | Sentiment scoring/routing | `NLP_Service/model.py`, `NLP_Service/preprocessing.py` |
@@ -489,9 +491,9 @@ All paths below are relative to the project root for portable use inside this do
 | Ownership, migration, worker and admin design | `docs/BUSINESS_WORKSPACES.md`, `Backend/routes/api.php`, `Backend/tests/Feature/` |
 | Aggregation and caching | `Backend/app/Services/DashboardService.php`, `OutlookService.php` |
 | Imports/scoring/worker | `Backend/app/Services/ReviewScoringService.php`, `ProductTrackingService.php` |
-| Recorded checks and UI verification | `docs/APP_VERIFICATION.md`, `.logs/*verification.json` |
-| Final design proof | `.logs/screenshots/reference-dashboard.png` |
-| File moves | `docs/FILE_MOVES.json` |
+| Recorded checks and UI verification | `docs/APP_VERIFICATION.md`, `_archive/cleanup-2026-11-17/.logs/*verification.json` |
+| Final design proof | `_archive/cleanup-2026-11-17/.logs/screenshots/reference-dashboard.png` |
+| File moves | `_archive/cleanup-2026-11-17/docs/FILE_MOVES.json` |
 | Startup and demonstration | `docs/TESTING_THE_APP.md`, `scripts/dev.py` |
 
 Developer reproduction commands, from the project root:

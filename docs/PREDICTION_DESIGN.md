@@ -1,5 +1,7 @@
 # Forecasting business outcomes using sentiment and Nigerian economic context
 
+> Historical design proposal for the first Nigerian review/FX experiment. The later commercial implementation and matched outcome studies are documented in [COMMERCIAL_RELEASE.md](COMMERCIAL_RELEASE.md) and [COMMERCIAL_BASELINE_RESULTS.md](COMMERCIAL_BASELINE_RESULTS.md).
+
 Design proposal, researched on 29 October 2026. This document proposes an experiment; it does not report a fitted economic model, downloaded macroeconomic dataset, or measured forecast improvement.
 
 **Implementation update:** the proposed offline comparison has now been implemented and run on the 201-review case study with official CBN FX data. See [measured results](BACKTEST_RESULTS.md) and [reproduction instructions](../NLP_Service/evaluation/business_prediction/README.md). The remainder preserves the design rationale, candidate sources, and limitations; sources other than NFEM FX remain candidates rather than inputs to this first run.

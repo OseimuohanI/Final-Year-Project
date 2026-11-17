@@ -58,18 +58,16 @@ See [collector setup and usage](Scraper/README.md), including browser installati
 | `Frontend/samples/` | Original synthetic review import fixtures |
 | `Frontend/scripts/` | Fixture generation utilities |
 | `Backend/` | Laravel API, database migrations, and PHP tests |
-| `Backend/scripts/` | Backend maintenance utilities |
 | `NLP_Service/` | Python API, sentiment model, preprocessing, aggregation, forecasting |
 | `NLP_Service/tests/` | Automated Python service tests |
 | `NLP_Service/evaluation/` | Benchmark data and evaluation scripts |
 | `NLP_Service/examples/` | Manual example API payloads |
-| `NLP_Service/experiments/` | Original exploratory forecasting diagnostics |
 | `Scraper/` | Collector code, dependency list, and tests |
 | `Scraper/data/collections/` | Collected datasets, imports, reports, and source captures |
-| `Scraper/data/archive/` | Failed pilots and old verification output |
-| `docs/` | Project guide and file-move record |
+| `docs/` | Current setup, architecture, research protocols and dated results |
+| `_archive/cleanup-2026-11-17/` | Reversible archive of superseded source and local development artifacts |
 
-The frontend, backend, and Python service retain their existing Git repositories. Local environments and IDE settings remain in place.
+The frontend, backend, and Python service retain their existing Git repositories. The active root Python environment and IDE settings remain in place; unused earlier environments are preserved in the cleanup archive.
 
 ## First real dataset
 
@@ -87,7 +85,7 @@ The [Nivea Dry Impact collection](Scraper/data/collections/nivea-dry-impact/DATA
 
 ## Run the application and checks
 
-See the [frontend instructions](Frontend/README.md), [backend instructions](Backend/README.md), and [project guide](docs/PROJECT_GUIDE.md). Start the Python service from the project root with:
+See the [frontend instructions](Frontend/README.md), [backend instructions](Backend/README.md), and [testing guide](docs/TESTING_THE_APP.md). Start the Python service from the project root with:
 
 ```bash
 .venv/bin/python -m uvicorn main:app --app-dir NLP_Service --host 127.0.0.1 --port 8000
@@ -101,4 +99,4 @@ Run Python tests:
 
 Run backend tests from `Backend/` using `php artisan test`.
 
-The [file-move record](docs/FILE_MOVES.json) maps scattered files to their new locations. No research data or exploratory scripts were deleted during reorganisation.
+The [cleanup archive](_archive/cleanup-2026-11-17/README.md) mirrors original paths and records checksums and restoration instructions. The initial planning guide, exploratory diagnostics and October move ledger are preserved there. Run `python3 scripts/restore_archive.py` to list entries; restoration previews changes and refuses to overwrite files. Local-only artifacts require a separate private backup.

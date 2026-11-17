@@ -9,3 +9,10 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Local-only payloads in the reversible workspace archive.
+/_archive/cleanup-2026-11-17/Backend/dev-docs/
+/_archive/cleanup-2026-11-17/NLP_Service/.venv311/
+/_archive/cleanup-2026-11-17/NLP_Service/evaluation/results/
+/_archive/cleanup-2026-11-17/Scraper/data/archive/
+/_archive/cleanup-2026-11-17/outputs/

@@ -1,0 +1,6 @@
+# Regenerated figures, visual QA and machine-local Node dependencies.
+work/*.png
+work/*.svg
+work/render/
+work/final-render/
+work/node_modules
