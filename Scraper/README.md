@@ -1,5 +1,9 @@
 # Jumia Nigeria review collector
 
+The separate [open-startup collector](open_startups.py) now captures/replays Buffer financial reports and its linked public app feedback, with source-access audits for Ghost, Baremetrics and additional review sources. This is an external commercial-data research collection, separate from Jumia dashboard imports. See [the dataset notes](data/collections/open-startups-2026-11-11/DATASET_NOTES.md) and [project milestone](../docs/OPEN_STARTUP_DATA.md). Its current matched feedback is insufficient for a trained commercial forecast.
+
+The [Olist research collector](olist.py) downloads the original public commercial dataset from Kaggle, pinned to version 2. [Preparation](prepare_olist.py) links actual item values to dated feedback without joining child tables into duplicated sales. See [Olist dataset notes](data/collections/olist-2026-11-13/DATASET_NOTES.md) for licence, counts, exclusions and reproduction, and the [commercial experiment results](../docs/COMMERCIAL_BASELINE_RESULTS.md) for the first trained comparison. These records remain separate from dashboard imports.
+
 ## Quick start
 
 From the project root:

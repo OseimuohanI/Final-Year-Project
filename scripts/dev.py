@@ -90,6 +90,8 @@ def main():
     print(f'Preparing {args.database} database (existing data is preserved)…', flush=True)
     for command in [['migrate', '--force'], ['research:seed-itel'], ['research:prepare-workspace']]:
         subprocess.run([php, 'artisan', *command], cwd=ROOT / 'Backend', env=env, check=True)
+    if args.database == 'demo' and (ROOT/'Scraper/data/collections/olist-forward-2026-11-13/commercial-import.json').exists():
+        subprocess.run([php, 'artisan', 'research:prepare-commercial'], cwd=ROOT/'Backend', env=env, check=True)
     model_environment(env)
     logs = ROOT / '.logs'
     logs.mkdir(exist_ok=True)

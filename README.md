@@ -4,6 +4,17 @@ A research prototype with a review dashboard, Laravel API, English/Pidgin sentim
 
 For the final report, see the [development account and report-writing guide](docs/REPORT_DEVELOPMENT_ACCOUNT.md). It explains what was implemented, why the main choices were made, the measured results and their limits, and the supporting evidence.
 
+The separate [commercial forecasting experiment](docs/COMMERCIAL_BASELINE_RESULTS.md)
+establishes an MRR baseline and evaluates actual Olist order values with linked
+customer sentiment. It is offline research and has not replaced the application's
+review forecasts.
+
+The [commercial forecasting release](docs/COMMERCIAL_RELEASE.md) adds human-label
+sentiment validation, an additional forward-period check, product sales imports,
+sentiment-based order-value forecasts and estimated ranges in the dashboard.
+The local launcher also prepares a separate historical commercial demo when its
+source files are present; choose **Use sales research demo** on the login screen.
+
 ## Repository setup
 
 This parent repository pins the Backend, Frontend and NLP_Service repositories as Git submodules. The scraper, shared documentation and launcher are maintained directly here.

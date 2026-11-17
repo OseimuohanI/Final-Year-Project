@@ -5,6 +5,10 @@ output/
 data/collections/*
 !data/collections/itel-power-station/
 !data/collections/nivea-dry-impact/
+!data/collections/open-startups-2026-11-11/
+!data/collections/olist-2026-11-13/
+!data/collections/olist-forward-2026-11-13/
+!data/collections/repro-2026-11-13/
 data/collections/*/*
 !data/collections/*/DATASET_NOTES.md
 data/archive/

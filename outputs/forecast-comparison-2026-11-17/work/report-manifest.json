@@ -1,0 +1,11 @@
+{
+  "document": "Forecasting_Approach_Comparison_Report.docx",
+  "created_for_date": "2026-11-17",
+  "input_hashes": {
+    "NLP_Service/evaluation/results/forecast-comparison-2026-11-17/comparison.json": "630ce7a4f13eb4deba641999318e5d49d57615f54a17dad92a2c48a4a289c8b3",
+    "NLP_Service/evaluation/results/forecast-comparison-2026-11-17/olist-original.json": "2beb71d3b341baf60c58d88321356ad572888824794d492d8c02fe6956430386",
+    "NLP_Service/evaluation/results/forecast-comparison-2026-11-17/buffer-baseline.json": "b88ac7b1556590e63663fd74dd4437c623c023ba2fbf692fa771ed860706035d",
+    "NLP_Service/evaluation/results/forecast-comparison-2026-11-17/itel-fx/backtest.json": "100d53b65d6c8f2c9cf928c8bcb8e9580ce641d73a70ec97c08bd2eb5635d882"
+  },
+  "planned_pages": 11
+}

@@ -31,6 +31,14 @@ The CBN NFEM snapshot has an assumed seven-day lag and no verified real-time pub
 
 ## Other setups
 
+### Demo login on the configured database (including Herd)
+
+The demo account now has a conventional `Database\Seeders\DemoAccountSeeder`. From `Backend/`, run `php artisan migrate`, then `php artisan db:seed --class=DemoAccountSeeder`. The default `php artisan db:seed` also creates it in local/testing environments. The initial credentials are the same as above. Repeated seeding preserves an existing password, rejects conflicting ownership and does not import or move reviews/products. It works without collected datasets or model caches. Production environments do not receive known demo credentials.
+
+If the demo credentials return 401 at `Backend.test` but work at `127.0.0.1:8001`, check which database each API uses: Herd uses `Backend/.env`, while the normal launcher uses `research-demo.sqlite`. Seed the intended local database or use the launcher's frontend at `127.0.0.1:8080`. The browser address bar sends a GET; authentication requires `POST /api/auth/login` with JSON email/password, or the site's sign-in form.
+
+### Configuration options
+
 - Ports: `--frontend-port`, `--api-port`, `--nlp-port`. Busy ports stop startup without killing another service.
 - Configured Laravel database: `--database configured` explicitly runs migrations/seeds against `Backend/.env`. Back up important data first. The normal launcher stays on SQLite.
 - Cached Laravel configuration: run `php artisan config:clear` inside `Backend` before demo mode. The launcher stops if a cache could override database isolation.
@@ -46,3 +54,16 @@ php artisan test
 ```
 
 PHP tests use an in-memory SQLite database. The optional collector browser tests require their documented opt-in. Tests include date integrity, temporal leakage, missing economic data, resumable 1,000-record imports, account isolation, product-level source-ID deduplication, review-weighted summaries, migration idempotence, and successful/blocked tracking-worker cases.
+# Commercial sales and sentiment demo
+
+The [commercial release guide](COMMERCIAL_RELEASE.md) documents the new sales
+imports, classification validation, forward check and reproduction. With the
+prepared Olist forward files present, the usual local launcher adds a separate
+historical demo account: `commerce@pulseboard.test` / `PulseboardDemo!2026` for a
+new account. Choose **Use sales research demo**, then **Sign in**. Existing
+passwords and other demo ownership are preserved.
+
+Open its portfolio product to inspect sales, forecast ranges, historical errors
+and the weekly sales import form. The financial sample ends in August 2018 and
+is labelled historical. The Jumia demo receives no invented sales records.
+Other accounts need their own complete weekly totals and matching reviews.
